@@ -1,9 +1,14 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 import sqlite3
 
 app = Flask(__name__)
 
+
 @app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/get_tasks')
 def get_data():
     # connect to sqlite db
     conn = sqlite3.connect("database.sqlite3")

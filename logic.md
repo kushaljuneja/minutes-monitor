@@ -29,11 +29,8 @@
 ### frontend
 
 - frontend to display the calendar without much UI / UX nonsense
-- all `CHUNK` blocks of same color - say blue.
-- all `EVENT` things to be just a single line
 - show the task_description inside the chunk
-- show it one day at a time
-- option to select date in the calendar
+- show all in one go on same page
 
 ### deploy
 
